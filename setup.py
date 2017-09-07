@@ -2,7 +2,7 @@
 
 from setuptools import setup, find_packages
 
-setup(name='stormbot-yocto',
+setup(name='stormbot-yocto-alert',
       version='1.0',
       description='yoctopuce plugin for stormbot',
       author='Paul Fariello',
