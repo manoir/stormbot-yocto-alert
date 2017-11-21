@@ -10,7 +10,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(name='stormbot-yocto-alert',
-      version='1.2.1',
+      version='1.2.2',
       description='yoctopuce plugin for stormbot',
       long_description=long_description,
       author='Paul Fariello',
@@ -18,7 +18,7 @@ setup(name='stormbot-yocto-alert',
       url='https://github.com/manoir/stormbot-yocto-alert',
       packages=find_packages(),
       install_requires=['stormbot', 'yoctopuce'],
-      entry_points={'stormbot.plugins': ['yocto = stormbot_yocto:Yocto']},
+      entry_points={'stormbot.plugins': ['yocto = stormbot_yocto_alert:Yocto']},
       classifiers=['Environment :: Console',
                    'Operating System :: POSIX',
                    'Topic :: Communications :: Chat',
