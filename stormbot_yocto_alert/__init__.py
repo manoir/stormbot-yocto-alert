@@ -28,7 +28,7 @@ class Yocto(Plugin):
     def random(self):
         return random.choice(self._sentences)
 
-    def run(self, msg, parser, args):
+    def run(self, msg, parser, args, peer):
         if not (self._relay.isOnline()):
             self._bot.write("Yocto isn't online")
             return
